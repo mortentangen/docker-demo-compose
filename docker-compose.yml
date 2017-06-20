@@ -10,5 +10,3 @@ services:
   docker-demo-world:
     image: world-image
     container_name: world-container
-    ports:
-      - "8080:3000"
