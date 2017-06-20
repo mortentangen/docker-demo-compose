@@ -1,0 +1,14 @@
+version: '3'
+services:
+  docker-demo-hello:
+    image: hello-image
+    container_name: hello-container
+    depends_on:
+      - docker-demo-world
+    ports:
+      - "80:3000"
+  docker-demo-world:
+    image: world-image
+    container_name: world-container
+    ports:
+      - "8080:3000"
